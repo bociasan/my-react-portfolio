@@ -1,0 +1,65 @@
+.bg {
+    position: absolute;
+    z-index: -13;
+    width: 100%;
+    height: 100vh;
+
+    background: linear-gradient(319deg,#21032b,#0f0532);
+    background-size: 300% 300%;
+    animation: gradient-animation 30s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.bg3{
+    position: absolute;
+    z-index: -13;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(159deg, #302e35, #160724, #051a44);
+    background-size: 300% 300%;
+    animation: AnimationName 22s ease infinite;
+}
+
+@keyframes AnimationName {
+    0%{background-position:0% 14%}
+    50%{background-position:100% 87%}
+    100%{background-position:0% 14%}
+}
+
+
+.bg2 {
+    position: absolute;
+    z-index: -13;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(
+            -45deg,
+            /*rgba(59,173,227,1) 0%,*/
+            rgba(48, 46, 53, 1) 0%,
+            rgba(48, 46, 53, 1) 50%,
+            rgba(22, 7, 36, 1) 25%,
+            rgba(5, 26, 68, 1) 100%
+    );
+    animation: AnimateBG 20s ease infinite;
+}
+
+@keyframes AnimateBG {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

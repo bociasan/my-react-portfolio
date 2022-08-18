@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import Background from "./components/Background/Background";
+import MyName from "./components/MyName/MyName";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Nice to meet u here :)
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    return (
+        <Box
+            sx={{
+                width: '100vw',
+                height: '100vh',
+                backgroundColor: 'transparent',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center'
+            }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+            <Background/>
+            <MyName/>
+        </Box>
+    );
 }
 
 export default App;
